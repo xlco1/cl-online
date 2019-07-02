@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite1]" parallel="tests">
+  <test thread-count="2" verbose="0" name="testinqa(failed)" parallel="tests">
+    <parameter name="env" value="qa"/>
+    <classes>
+      <class name="clo.AddaNewReturn">
+        <methods>
+          <include name="login"/>
+          <include name="addareturn"/>
+          <include name="teardown"/>
+          <include name="frm1099_MISC"/>
+          <include name="printTaxReturn"/>
+          <include name="scheduleC"/>
+          <include name="scheduleE"/>
+        </methods>
+      </class> <!-- clo.AddaNewReturn -->
+    </classes>
+  </test> <!-- testinqa(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
