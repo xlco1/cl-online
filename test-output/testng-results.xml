@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite1" duration-ms="103402" started-at="2019-07-15T20:34:07Z" finished-at="2019-07-15T20:35:50Z">
+    <groups>
+    </groups>
+    <test name="testinqa" duration-ms="103402" started-at="2019-07-15T20:34:07Z" finished-at="2019-07-15T20:35:50Z">
+      <class name="clo.AddaNewReturn">
+        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:clo.AddaNewReturn@1f2586d6]" name="login" is-config="true" duration-ms="17871" started-at="2019-07-15T20:34:07Z" finished-at="2019-07-15T20:34:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="addareturn(java.lang.String)[pri:1, instance:clo.AddaNewReturn@1f2586d6]" name="addareturn" duration-ms="39457" started-at="2019-07-15T20:34:25Z" finished-at="2019-07-15T20:35:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addareturn -->
+        <test-method status="PASS" signature="scheduleC()[pri:2, instance:clo.AddaNewReturn@1f2586d6]" name="scheduleC" duration-ms="25493" started-at="2019-07-15T20:35:04Z" depends-on-methods="clo.AddaNewReturn.addareturn" finished-at="2019-07-15T20:35:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scheduleC -->
+        <test-method status="PASS" signature="scheduleE()[pri:3, instance:clo.AddaNewReturn@1f2586d6]" name="scheduleE" duration-ms="11775" started-at="2019-07-15T20:35:30Z" depends-on-methods="clo.AddaNewReturn.scheduleC, clo.AddaNewReturn.addareturn" finished-at="2019-07-15T20:35:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scheduleE -->
+        <test-method status="PASS" signature="frm1099_MISC()[pri:4, instance:clo.AddaNewReturn@1f2586d6]" name="frm1099_MISC" duration-ms="8310" started-at="2019-07-15T20:35:41Z" depends-on-methods="clo.AddaNewReturn.scheduleE, clo.AddaNewReturn.scheduleC, clo.AddaNewReturn.addareturn" finished-at="2019-07-15T20:35:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- frm1099_MISC -->
+        <test-method status="PASS" signature="teardown(java.lang.String)[pri:0, instance:clo.AddaNewReturn@1f2586d6]" name="teardown" is-config="true" duration-ms="469" started-at="2019-07-15T20:35:50Z" finished-at="2019-07-15T20:35:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- clo.AddaNewReturn -->
+    </test> <!-- testinqa -->
+  </suite> <!-- Suite1 -->
+</testng-results>

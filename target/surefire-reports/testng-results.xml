@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="5" failed="0" ignored="0" total="5" passed="0">
+<testng-results skipped="3" failed="1" ignored="0" total="5" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite1" duration-ms="5332" started-at="2019-07-02T17:26:34Z" finished-at="2019-07-02T17:26:40Z">
+  <suite name="Suite1" duration-ms="52006" started-at="2019-07-15T20:04:13Z" finished-at="2019-07-15T20:05:05Z">
     <groups>
     </groups>
-    <test name="testinqa" duration-ms="5332" started-at="2019-07-02T17:26:34Z" finished-at="2019-07-02T17:26:40Z">
+    <test name="testinqa" duration-ms="52006" started-at="2019-07-15T20:04:13Z" finished-at="2019-07-15T20:05:05Z">
       <class name="clo.AddaNewReturn">
-        <test-method status="FAIL" signature="login(java.lang.String)[pri:0, instance:clo.AddaNewReturn@6069db50]" name="login" is-config="true" duration-ms="5297" started-at="2019-07-02T17:26:34Z" finished-at="2019-07-02T17:26:39Z">
+        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:clo.AddaNewReturn@6069db50]" name="login" is-config="true" duration-ms="11073" started-at="2019-07-15T20:04:13Z" finished-at="2019-07-15T20:04:24Z">
           <params>
             <param index="0">
               <value>
@@ -15,32 +15,43 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchWindowException">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="addareturn(java.lang.String)[pri:1, instance:clo.AddaNewReturn@6069db50]" name="addareturn" duration-ms="36511" started-at="2019-07-15T20:04:24Z" finished-at="2019-07-15T20:05:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addareturn -->
+        <test-method status="FAIL" signature="scheduleC()[pri:2, instance:clo.AddaNewReturn@6069db50]" name="scheduleC" duration-ms="1698" started-at="2019-07-15T20:05:01Z" depends-on-methods="clo.AddaNewReturn.addareturn" finished-at="2019-07-15T20:05:02Z">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
+              <![CDATA[unknown error: Element <button tabindex="0" class="jss194 jss902 jss913 jss914 jss916 jss917" type="button" id="btnOptionsHeaderBarForms" aria-haspopup="true" style="border-radius: 4px; border: 0px; height: 35px; padding: 0px; min-height: 0px; min-width: 0px;">...</button> is not clickable at point (1876, 25). Other element would receive the click: <div class="jss1376" aria-hidden="true" style="opacity: 1; will-change: opacity; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"></div>
   (Session info: chrome=75.0.3770.100)
   (Driver info: chromedriver=2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9),platform=Windows NT 6.2.9200 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 6 milliseconds
+Command duration or timeout: 67 milliseconds
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
 System info: host: 'qaint', ip: '89.0.1.156', os.name: 'Windows Server 2012', os.arch: 'amd64', os.version: '6.2', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9), userDataDir=C:\Users\SSREEN~1\AppData\Local\Temp\5\scoped_dir4652_26984}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=75.0.3770.100, platform=WIN8, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: 32f655dfaeed6499d2849badb8b97dbf
-*** Element info: {Using=id, value=txtUsernameLogin}]]>
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9), userDataDir=C:\Users\SSREEN~1\AppData\Local\Temp\4\scoped_dir11348_29995}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=75.0.3770.100, platform=WIN8, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 6b5842751694d46752d4c2d8b5e37613]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <button tabindex="0" class="jss194 jss902 jss913 jss914 jss916 jss917" type="button" id="btnOptionsHeaderBarForms" aria-haspopup="true" style="border-radius: 4px; border: 0px; height: 35px; padding: 0px; min-height: 0px; min-width: 0px;">...</button> is not clickable at point (1876, 25). Other element would receive the click: <div class="jss1376" aria-hidden="true" style="opacity: 1; will-change: opacity; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"></div>
   (Session info: chrome=75.0.3770.100)
   (Driver info: chromedriver=2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9),platform=Windows NT 6.2.9200 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 6 milliseconds
+Command duration or timeout: 67 milliseconds
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
 System info: host: 'qaint', ip: '89.0.1.156', os.name: 'Windows Server 2012', os.arch: 'amd64', os.version: '6.2', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9), userDataDir=C:\Users\SSREEN~1\AppData\Local\Temp\5\scoped_dir4652_26984}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=75.0.3770.100, platform=WIN8, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: 32f655dfaeed6499d2849badb8b97dbf
-*** Element info: {Using=id, value=txtUsernameLogin}
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9), userDataDir=C:\Users\SSREEN~1\AppData\Local\Temp\4\scoped_dir11348_29995}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=75.0.3770.100, platform=WIN8, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 6b5842751694d46752d4c2d8b5e37613
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -48,23 +59,22 @@ at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
 at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
-at org.openqa.selenium.By$ById.findElement(By.java:218)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-at pageObjects.LogincloPO.getusername(LogincloPO.java:43)
-at clo.AddaNewReturn.login(AddaNewReturn.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+at resources.Base.saveTaxReturn(Base.java:169)
+at clo.AddaNewReturn.scheduleC(AddaNewReturn.java:333)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:498)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.TestRunner.beforeRun(TestRunner.java:529)
-at org.testng.TestRunner.run(TestRunner.java:497)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
 at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
 at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
@@ -75,11 +85,11 @@ at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:62
 at java.lang.Thread.run(Thread.java:748)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="SKIP" signature="scheduleE()[pri:3, instance:clo.AddaNewReturn@6069db50]" name="scheduleE" duration-ms="0" started-at="2019-07-02T17:26:40Z" depends-on-methods="clo.AddaNewReturn.scheduleC, clo.AddaNewReturn.addareturn" finished-at="2019-07-02T17:26:40Z">
+        </test-method> <!-- scheduleC -->
+        <test-method status="SKIP" signature="scheduleE()[pri:3, instance:clo.AddaNewReturn@6069db50]" name="scheduleE" duration-ms="0" started-at="2019-07-15T20:05:02Z" depends-on-methods="clo.AddaNewReturn.scheduleC, clo.AddaNewReturn.addareturn" finished-at="2019-07-15T20:05:02Z">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method AddaNewReturn.scheduleE()[pri:3, instance:clo.AddaNewReturn@6069db50] depends on not successfully finished methods]]>
@@ -105,7 +115,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- scheduleE -->
-        <test-method status="SKIP" signature="printTaxReturn()[pri:5, instance:clo.AddaNewReturn@6069db50]" name="printTaxReturn" duration-ms="0" started-at="2019-07-02T17:26:40Z" depends-on-methods="clo.AddaNewReturn.scheduleE, clo.AddaNewReturn.scheduleC, clo.AddaNewReturn.frm1099_MISC, clo.AddaNewReturn.addareturn" finished-at="2019-07-02T17:26:40Z">
+        <test-method status="SKIP" signature="printTaxReturn()[pri:5, instance:clo.AddaNewReturn@6069db50]" name="printTaxReturn" duration-ms="0" started-at="2019-07-15T20:05:02Z" depends-on-methods="clo.AddaNewReturn.scheduleE, clo.AddaNewReturn.scheduleC, clo.AddaNewReturn.frm1099_MISC, clo.AddaNewReturn.addareturn" finished-at="2019-07-15T20:05:02Z">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method AddaNewReturn.printTaxReturn()[pri:5, instance:clo.AddaNewReturn@6069db50] depends on not successfully finished methods]]>
@@ -131,7 +141,18 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- printTaxReturn -->
-        <test-method status="SKIP" signature="frm1099_MISC()[pri:4, instance:clo.AddaNewReturn@6069db50]" name="frm1099_MISC" duration-ms="0" started-at="2019-07-02T17:26:40Z" depends-on-methods="clo.AddaNewReturn.scheduleE, clo.AddaNewReturn.scheduleC, clo.AddaNewReturn.addareturn" finished-at="2019-07-02T17:26:40Z">
+        <test-method status="PASS" signature="teardown(java.lang.String)[pri:0, instance:clo.AddaNewReturn@6069db50]" name="teardown" is-config="true" duration-ms="2672" started-at="2019-07-15T20:05:02Z" finished-at="2019-07-15T20:05:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="SKIP" signature="frm1099_MISC()[pri:4, instance:clo.AddaNewReturn@6069db50]" name="frm1099_MISC" duration-ms="0" started-at="2019-07-15T20:05:02Z" depends-on-methods="clo.AddaNewReturn.scheduleE, clo.AddaNewReturn.scheduleC, clo.AddaNewReturn.addareturn" finished-at="2019-07-15T20:05:02Z">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method AddaNewReturn.frm1099_MISC()[pri:4, instance:clo.AddaNewReturn@6069db50] depends on not successfully finished methods]]>
@@ -157,108 +178,6 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- frm1099_MISC -->
-        <test-method status="SKIP" signature="scheduleC()[pri:2, instance:clo.AddaNewReturn@6069db50]" name="scheduleC" duration-ms="0" started-at="2019-07-02T17:26:40Z" depends-on-methods="clo.AddaNewReturn.addareturn" finished-at="2019-07-02T17:26:40Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method AddaNewReturn.scheduleC()[pri:2, instance:clo.AddaNewReturn@6069db50] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method AddaNewReturn.scheduleC()[pri:2, instance:clo.AddaNewReturn@6069db50] depends on not successfully finished methods
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- scheduleC -->
-        <test-method status="SKIP" signature="addareturn(java.lang.String)[pri:1, instance:clo.AddaNewReturn@6069db50]" name="addareturn" duration-ms="0" started-at="2019-07-02T17:26:40Z" finished-at="2019-07-02T17:26:40Z">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=75.0.3770.100)
-  (Driver info: chromedriver=2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9),platform=Windows NT 6.2.9200 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 6 milliseconds
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'qaint', ip: '89.0.1.156', os.name: 'Windows Server 2012', os.arch: 'amd64', os.version: '6.2', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9), userDataDir=C:\Users\SSREEN~1\AppData\Local\Temp\5\scoped_dir4652_26984}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=75.0.3770.100, platform=WIN8, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: 32f655dfaeed6499d2849badb8b97dbf
-*** Element info: {Using=id, value=txtUsernameLogin}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=75.0.3770.100)
-  (Driver info: chromedriver=2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9),platform=Windows NT 6.2.9200 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 6 milliseconds
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'qaint', ip: '89.0.1.156', os.name: 'Windows Server 2012', os.arch: 'amd64', os.version: '6.2', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9), userDataDir=C:\Users\SSREEN~1\AppData\Local\Temp\5\scoped_dir4652_26984}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=75.0.3770.100, platform=WIN8, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: 32f655dfaeed6499d2849badb8b97dbf
-*** Element info: {Using=id, value=txtUsernameLogin}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
-at org.openqa.selenium.By$ById.findElement(By.java:218)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-at pageObjects.LogincloPO.getusername(LogincloPO.java:43)
-at clo.AddaNewReturn.login(AddaNewReturn.java:224)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.TestRunner.beforeRun(TestRunner.java:529)
-at org.testng.TestRunner.run(TestRunner.java:497)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addareturn -->
-        <test-method status="PASS" signature="teardown(java.lang.String)[pri:0, instance:clo.AddaNewReturn@6069db50]" name="teardown" is-config="true" duration-ms="0" started-at="2019-07-02T17:26:40Z" finished-at="2019-07-02T17:26:40Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[qa]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
       </class> <!-- clo.AddaNewReturn -->
     </test> <!-- testinqa -->
   </suite> <!-- Suite1 -->

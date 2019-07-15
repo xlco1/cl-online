@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite1" parallel="tests" thread-count="2">
+
+  <test name="testinqa">
+   <parameter name="env" value="qa"/>
+        <classes>
+       <class name="clo.AddaNewReturn"/>
+    <!--  <class name="clo.AddaNewPreparer"/> -->
+    </classes>
+  </test> 
+ <!--  <test name="testinprod">
+   <parameter name="env" value="prod"/>
+        <classes>
+       <class name="clo.AddaNewReturn"/>
+     <class name="clo.AddaNewPreparer"/>
+    </classes>
+  </test>  -->
+    
+  <!-- <test  name="testindev">
+    <parameter name="env" value="dev"/>
+       <classes>
+      <class name="clo.AddaNewReturn"/>
+     </classes>
+  </test>   -->
+</suite>

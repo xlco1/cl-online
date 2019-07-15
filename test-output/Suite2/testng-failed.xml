@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite2]">
+  <test thread-count="5" name="Test2(failed)">
+    <classes>
+      <class name="clo.LoginPage">
+        <methods>
+          <include name="createNewAppointment"/>
+          <include name="deleteMessage"/>
+          <include name="deleteAppointment"/>
+          <include name="checksReadyToPrint"/>
+          <include name="loginPositive"/>
+          <include name="checksRegister"/>
+          <include name="createApptSameTime"/>
+          <include name="newMessageReply"/>
+          <include name="updateAppointment"/>
+          <include name="newMessageSent"/>
+        </methods>
+      </class> <!-- clo.LoginPage -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite2] -->
