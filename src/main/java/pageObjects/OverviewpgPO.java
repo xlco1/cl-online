@@ -18,20 +18,27 @@ public class OverviewpgPO {
 		this.driver=driver;
 	}
 	
-	By overviewtab = By.id("spnTitleTab0");
-	By officestab = By.id("spnTitleTab2");
-	By viewbtn = By.xpath("//button[@id='btnViewOfficeList9']");//view btn for first office
-	By devViewbtn =By.xpath("//button[@id='btnViewOfficeList0']");
-	By preparersbtn = By.xpath("//div/span[@id='spnTitleTab1']");
-	By Viewprepbtn = By.id("btnViewPreparerLoginID422");//btnViewPreparerLoginID428
-	By devViewprepbtn = By.id("btnViewPreparerLoginID428");
+	By overviewtab = By.xpath("//*[@id='OverviewTab']");
+	By officestab =By.id("OfficesTab");
+			//By.xpath("//div/span[@id='spnTitleTab2']"); 
+	By prodOfficetab = By.xpath("//div/span[@id='spnTitleTab2']");
+	By preparertab = By.xpath("//*[@id='PreparersTab']");//*[@id="PreparersTab"]
 			
+	By qaViewbtn = By.xpath("//button[@id='btnViewOfficeList12']");//view btn for first office
+	By devViewbtn =By.xpath("//button[@id='btnViewOfficeList0']");
+	By prodViewbtn = By.xpath("//button[@id='btnViewOfficeList3']");
+	By preparersbtn = By.xpath("//*[@id='PreparersTab']");
+	By qaViewprepbtn = By.id("btnViewPreparerLoginID422");//btnViewPreparerLoginID428
+	By devViewprepbtn = By.id("btnViewPreparerLoginID428");
+	By prodViewprepbtn = By.id("btnViewPreparerLoginID651"); 
 	By Newprepbtn = By.id("btnAddPreparerPreparers");
-	By taxreturnsbtn = By.xpath("//div/span[@id='spnTitleTab1']");
+	By taxreturnsbtn = By.xpath("//span/a[@id='TaxReturnsTab']");
+			//By.xpath("//*[@id='TaxReturnsTab']");
 	By Newtaxreturnbtn = By.xpath("//button[@id='addReturnButton']");
 	By Profiletitlebar = By.id("spnAccountProfileTitleBar");
 	By Setupofficebtn = By.xpath("//div[contains(text(),'Setup (first office)')]");
-	By Newpreparerbtn = By.xpath("//button[@id='btnNewPreparerManagerOverview']");
+	//By Newpreparerbtn = By.xpath("//button[@id='btnNewPreparerManagerOverview']");
+	By CreateNewPrep = By.id("btnAddPreparerPreparers");
 	//-------------------------------
 	By onetaxretrn = By.id("btnOpenTaxReturnTRList9");
 	By continueinataxrtn = By.id("btnContinueReturnProfile");
@@ -103,9 +110,17 @@ public class OverviewpgPO {
 	{
 		return driver.findElement(officestab);
 	}
+	public WebElement clickprodofficestab()
+	{
+		return driver.findElement(prodOfficetab);
+	}
+	public WebElement clickpreparertab()
+	{
+		return driver.findElement(preparertab);
+	}
 	public WebElement clickviewbtn()
 	{
-		return driver.findElement(viewbtn);
+		return driver.findElement(qaViewbtn);
 	}
 	public WebElement clickpreparersbtn()
 	{
@@ -113,7 +128,7 @@ public class OverviewpgPO {
 	}
 	public WebElement clickviewprepbtn()
 	{
-		return driver.findElement(Viewprepbtn);
+		return driver.findElement(qaViewprepbtn);
 	}
 	public WebElement clickNewprepbtn()
 	{
@@ -135,9 +150,9 @@ public class OverviewpgPO {
 	{
 		return driver.findElement(Setupofficebtn);
 	}
-	public WebElement clickNewpreparerbtn()
+	public WebElement clickCreateNewPrep()
 	{
-		return driver.findElement(Newpreparerbtn);
+		return driver.findElement(CreateNewPrep);
 	}
 	//-------------------------------
 	public WebElement clickonetaxretrn()
@@ -156,6 +171,16 @@ public class OverviewpgPO {
 	public WebElement clickdevViewprepbtn()
 	{
 		return driver.findElement(devViewprepbtn);
+	}
+	
+	public WebElement clickprodViewbtn()
+	{
+		return driver.findElement(prodViewbtn);
+	}
+	
+	public WebElement clickprodViewprepbtn()
+	{
+		return driver.findElement(prodViewprepbtn);
 	}
 	//-----------------------------------
 	public WebElement clickappointmenticonbtn()

@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite1" parallel="tests" thread-count="2">
+<suite name="Suite1" parallel="tests" thread-count="1">
 
   <test name="testinqa">
    <parameter name="env" value="qa"/>
         <classes>
-       <class name="clo.AddaNewReturn"/>
-    <!--  <class name="clo.AddaNewPreparer"/> -->
+        <class name="clo.AddaNewReturn"/>
+      <!--  <class name="clo.AddaNewPreparer"/> -->
     </classes>
   </test> 
+  
+ 
+  <!--  <test name="testinqa1">
+		<parameter name="env" value="qa" />
+		<classes>
+			<class name="clo.LoginPage" />
+			<class name="clo.AccountSettings" />
+			<class name="clo.DatabaseSettings" />
+		</classes>
+		</test>  -->
+		
  <!--  <test name="testinprod">
    <parameter name="env" value="prod"/>
         <classes>
@@ -22,5 +33,5 @@
        <classes>
       <class name="clo.AddaNewReturn"/>
      </classes>
-  </test>   -->
+  </test>  --> 
 </suite>

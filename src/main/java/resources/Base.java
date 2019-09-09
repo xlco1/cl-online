@@ -23,10 +23,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-
+import com.relevantcodes.extentreports.DisplayOrder;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
@@ -42,9 +44,11 @@ public class Base {
 	public static XSSFWorkbook workbook;
 	public static XSSFSheet sheet;
 	public ExtentReports report;
-	public ExtentTest test;
+	public ExtentReports report1;
+	public static ExtentTest test;
 	public String filename;
 	public String projectPath = System.getProperty("user.dir");
+	public static WebDriverWait Wait;
 	//---
 	
 	
@@ -55,7 +59,7 @@ public class Base {
 	{
 		//System.setProperty("webdriver.chrome.driver", projectPath +"/driver/chromedriver.exe");
 		ChromeOptions options = new ChromeOptions();
-		if(env.equalsIgnoreCase("prod"))
+		if(env.equalsIgnoreCase("prod1"))
 		{
 			options.addArguments("user-data-dir=C:\\Users\\ssreenivasan\\AppData\\Local\\Google\\Chrome\\User Data");
 			options.addArguments("--start-maximized");
@@ -83,16 +87,32 @@ public class Base {
 		prop = new Properties();
 		FileInputStream fs=new FileInputStream(projectPath +"/src/main/java/resources/data.properties");
 		prop.load(fs);
-		report = new ExtentReports(System.getProperty("user.dir") + "./reports/testExecutionReport.html",true);
+		report = new ExtentReports(System.getProperty("user.dir") + "./reports/testExecutionReport.html",false,DisplayOrder.NEWEST_FIRST);
 				//new ExtentHtmlReporter("./reports/testExecutionReport.html");
+		//new ExtentReports()
 				//new ExtentReporter(System.getProperty("user.dir") + "./reports/testExecutionReport.html",true);
 				//new ExtentReports("AddareturnReport.html",true);//where to save the report//H:\\CLO\\
 		//extent = new ExtentReports();
 		test = report.startTest("Adding a New Tax Return");
 		test.log(LogStatus.INFO,"Browser Maximized");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		Wait = new WebDriverWait(driver,10);
 		return driver;
 	}
+	
+	public boolean isElementPresent(WebElement webElement)
+	{
+		
+		 if(webElement.isEnabled())
+		 {
+			 return true;
+		 }
+		 else
+		 {
+			 return false;
+		 }
+	}
+	
 	
 	public XSSFSheet getCellData()
 	{
@@ -117,6 +137,7 @@ public class Base {
 	{
 		arg2.sendKeys(Keys.chord(Keys.ALT,"c"));
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		Thread.sleep(1000);
 		if(driver.findElement(By.id("choiceListRow0")).isDisplayed() || driver.findElement(By.xpath("//td[text()='95304']")).isDisplayed())
 			{
 			if(arg1.equals("prepID"))
@@ -180,9 +201,9 @@ public class Base {
 	{
 		
 		TakesScreenshot ts = (TakesScreenshot)driver;
-		File ScreenShots = ts.getScreenshotAs(OutputType.FILE);
+		File ScreenShots = ts.getScreenshotAs(OutputType.FILE);	
 		try {
-			filename = "./Screenshots/errorsSnapshot.png";
+			filename = "./Screenshots/verifyerrorssnapshot.png";
 					//"H:\\CLO\\AddaReturnReport.png";
 					//"C:\\CLOAutoSnaps\\verifyerror.png";
 		
@@ -192,7 +213,14 @@ public class Base {
 			e.printStackTrace();
 		}
 		return filename;
+		//return ScreenShots;
 		
+	}
+	@AfterSuite
+	public void endReports()
+	{
+		report.endTest(test);
+		report.flush();
 	}
 	
 }

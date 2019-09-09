@@ -31,7 +31,7 @@ public class DeleteaPreparer extends Base {
 		try {
 			logger.info("In adding a new prep test case");
 			OverviewpgPO op = new OverviewpgPO(driver);
-			op.clickNewpreparerbtn().click();
+			op.clickCreateNewPrep().click();
 			logger.info("Clicked New preparer button");
 			Thread.sleep(1000);
 			PreparerinCompleteSetupPO pc= new PreparerinCompleteSetupPO(driver);

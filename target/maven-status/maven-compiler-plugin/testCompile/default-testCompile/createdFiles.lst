@@ -1,7 +1,14 @@
+clo\Listener.class
 clo\DeleteaPreparer.class
+clo\Chromeprofiling.class
+clo\AddaNewPreparer.class
+clo\AddaNewReturn2.class
 clo\LoginPage.class
 clo\LoginClo.class
 clo\AddaNewReturn.class
+clo\AccountSettings.class
 clo\Dbconnection.class
-clo\AddaNewPreparer.class
+clo\DatabaseSettings.class
+clo\InterviewMode.class
+clo\TrainingModeReturn.class
 clo\Officesetup.class

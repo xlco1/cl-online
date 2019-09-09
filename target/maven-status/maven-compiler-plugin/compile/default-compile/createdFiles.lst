@@ -1,10 +1,14 @@
 pageObjects\LogincloPO.class
+pageObjects\AccountSettingsPO.class
 pageObjects\AddaReturnpgCDSPO.class
 pageObjects\FRMSCH_CPO.class
+pageObjects\InterviewModePO.class
+pageObjects\BillingSetupPO.class
 pageObjects\FRM1040PO.class
 pageObjects\FRMW2PO.class
 pageObjects\PreparerinCompleteSetupPO.class
 pageObjects\CompletesetupPO.class
+pageObjects\DatabaseSettingsPO.class
 pageObjects\FRM1099_MISCPO.class
 pageObjects\FRMSCH_EPO.class
 pageObjects\FRM8879PO.class

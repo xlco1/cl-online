@@ -1,22 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite2]">
-  <test thread-count="5" name="Test2(failed)">
+  <test thread-count="5" name="testinqa(failed)">
+    <parameter name="env" value="qa"/>
     <classes>
-      <class name="clo.LoginPage">
+      <class name="clo.AccountSettings">
         <methods>
-          <include name="createNewAppointment"/>
-          <include name="deleteMessage"/>
-          <include name="deleteAppointment"/>
-          <include name="checksReadyToPrint"/>
-          <include name="loginPositive"/>
-          <include name="checksRegister"/>
-          <include name="createApptSameTime"/>
-          <include name="newMessageReply"/>
-          <include name="updateAppointment"/>
-          <include name="newMessageSent"/>
+          <include name="endReports"/>
+          <include name="teardown"/>
+          <include name="toggleTrainingModeOff"/>
+          <include name="toggleTrainingMode"/>
         </methods>
-      </class> <!-- clo.LoginPage -->
+      </class> <!-- clo.AccountSettings -->
     </classes>
-  </test> <!-- Test2(failed) -->
+  </test> <!-- testinqa(failed) -->
 </suite> <!-- Failed suite [Suite2] -->

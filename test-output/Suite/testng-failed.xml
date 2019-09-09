@@ -8,11 +8,8 @@
         <methods>
           <include name="login"/>
           <include name="addareturn"/>
+          <include name="endReports"/>
           <include name="teardown"/>
-          <include name="frm1099_MISC"/>
-          <include name="printTaxReturn"/>
-          <include name="scheduleC"/>
-          <include name="scheduleE"/>
         </methods>
       </class> <!-- clo.AddaNewReturn -->
     </classes>

@@ -42,7 +42,9 @@ public class PreparerinCompleteSetupPO {
 	By ErrortoNewPrep = By.id("confirm-delete-title");
 	By ErrorDesc = By.id("confirm-delete-desc");
 	By DonebtninError = By.id("btnHideSettingsError");
-	By Delete_btnexecuteaction3 = By.id("btnExecuteAction3");
+	By Delete_btnexecuteaction3 =By.xpath("//button[@id='btnExecuteAction4'][1]");
+			//By.id("btnExecuteAction4");
+	By ConfirminDeletePrep = By.id("btnConfirmDialog");
 	By Closebtn = By.id("btnSaveAndCloseSettingsProfile");
 	
 	public WebElement clkAddNewbtn()

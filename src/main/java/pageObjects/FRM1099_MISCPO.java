@@ -20,7 +20,8 @@ public class FRM1099_MISCPO {
 
 	By payersEIN = By.id("008500");
 	By rents = By.id("011500");
-	By linksTo =By.xpath("//input[@id='890000']");
+	By linksTo = By.id("890000");
+			//By.xpath("//input[@id='890000']");
 			//By.id("890000");
 	
 	public WebElement getpayersEIN()

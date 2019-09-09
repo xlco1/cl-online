@@ -34,6 +34,7 @@ public class AddaReturnpgCDSPO {
 	By city=By.id("dcty00");
 	By state=By.id("dsta00");
 	By zip=By.id("dzip00");
+	By enrollProtection = By.id("HCQ400");
 	By healthinsA=By.id("HCQ200");
 	By Addaform = By.id("btnAddFormSidebar");
 	By generalbtn =By.id("GENERAL");
@@ -41,9 +42,25 @@ public class AddaReturnpgCDSPO {
 			//By.xpath("//*[@id=\"GENERAL\"]/li/div/p");
 	
 	By Clientdatabtn = By.id("000000");
+	//---------------------- Refund Calc PO
+	By refundCalcSideBarbtn = By.id("btnSideBar4");
+	By singleCheckbox = By.xpath("//*[@id='zsingle0']"); 
+	By aboutheFamilyNextbtn = By.id("ZZ0155");
+	By singleTextbox = By.id("001000");
+	By FilingstatusNextbtn = By.id("ZZ13145");
+	By taxpayersDOB = By.id("001000");
+	By taxPayerinfoNextbtn = By.id("ZZ16150");
+	By w2WagesCheckbox = By.id("zzw2wages0");
+	By taxpayersWages = By.id("009000");
+	By taxpayersFedWith = By.id("010000");
+	By incomeNextbtn = By.id("ZZ30470");
+	By adjustmentsNextbtn = By.id("ZZ40255");
+	By creditsNextbtn = By.id("ZZ50175");
+	By createReturnbtn = By.id("ZZ90230");
+	By exitbtn = By.id("ZZ90250");
+	By cancelbtninExit = By.id("btnCancelDialog");
 	
-			//By.xpath("//button/span[text()='Add A Form']");
-	
+	//----------------------------
 	
 	public WebElement getssn()
 	{
@@ -114,6 +131,10 @@ public class AddaReturnpgCDSPO {
 	{
 		return driver.findElement(zip);
 	}
+	public WebElement getenrollProtection()
+	{
+		return driver.findElement(enrollProtection);
+	}
 	public WebElement gethealthinsA()
 	{
 		return driver.findElement(healthinsA);
@@ -131,5 +152,70 @@ public class AddaReturnpgCDSPO {
 	{
 		return driver.findElement(Clientdatabtn);
 	}
+	
+	public WebElement clickrefundCalcSideBarbtn()
+	{
+		return driver.findElement(refundCalcSideBarbtn);
+	}
+	public WebElement clicksingleCheckbox()
+	{
+		return driver.findElement(singleCheckbox);
+	}
+	public WebElement clickaboutheFamilyNextbtn()
+	{
+		return driver.findElement(aboutheFamilyNextbtn);
+	}
+	public WebElement getsingleTextbox()
+	{
+		return driver.findElement(singleTextbox);
+	}
+	public WebElement clickFilingstatusNextbtn()
+	{
+		return driver.findElement(FilingstatusNextbtn);
+	}
+	public WebElement gettaxpayersDOB()
+	{
+		return driver.findElement(taxpayersDOB);
+	}
+	public WebElement clicktaxPayerinfoNextbtn()
+	{
+		return driver.findElement(taxPayerinfoNextbtn);
+	}
+	public WebElement clickw2WagesCheckbox()
+	{
+		return driver.findElement(w2WagesCheckbox);
+	}
+	public WebElement gettaxpayersWages()
+	{
+		return driver.findElement(taxpayersWages);
+	}
+	public WebElement gettaxpayersFedWith()
+	{
+		return driver.findElement(taxpayersFedWith);
+	}
+	public WebElement clickincomeNextbtn()
+	{
+		return driver.findElement(incomeNextbtn);
+	}
+	public WebElement clickadjustmentsNextbtn()
+	{
+		return driver.findElement(adjustmentsNextbtn);
+	} 
+	public WebElement clickcreditsNextbtn()
+	{
+		return driver.findElement(creditsNextbtn);
+	} 
+	public WebElement clickcreateReturnbtn()
+	{
+		return driver.findElement(createReturnbtn);
+	} 
+	public WebElement clickexitbtn()
+	{
+		return driver.findElement(exitbtn);
+	} 
+	public WebElement clickcancelbtninExit()
+	{
+		return driver.findElement(cancelbtninExit);
+	} 
 		
 }

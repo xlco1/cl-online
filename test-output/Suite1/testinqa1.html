@@ -1,0 +1,294 @@
+<html>
+<head>
+<title>TestNG:  testinqa1</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>testinqa1</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>43/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Aug 06 11:02:35 PDT 2019</td>
+</tr>
+<tr><td>Total time:</td><td>218 seconds (218585 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='clo.AccountSettings.captureSignature()'><b>captureSignature</b><br>Test class: clo.AccountSettings</td>
+<td></td>
+<td>7</td>
+<td>clo.AccountSettings@710f4dc7</td></tr>
+<tr>
+<td title='clo.AccountSettings.changePassword()'><b>changePassword</b><br>Test class: clo.AccountSettings</td>
+<td></td>
+<td>4</td>
+<td>clo.AccountSettings@710f4dc7</td></tr>
+<tr>
+<td title='clo.AccountSettings.changePasswordCancel()'><b>changePasswordCancel</b><br>Test class: clo.AccountSettings</td>
+<td></td>
+<td>4</td>
+<td>clo.AccountSettings@710f4dc7</td></tr>
+<tr>
+<td title='clo.LoginPage.checksReadyToPrint()'><b>checksReadyToPrint</b><br>Test class: clo.LoginPage</td>
+<td></td>
+<td>5</td>
+<td>clo.LoginPage@2925bf5b</td></tr>
+<tr>
+<td title='clo.LoginPage.checksRegister()'><b>checksRegister</b><br>Test class: clo.LoginPage</td>
+<td></td>
+<td>6</td>
+<td>clo.LoginPage@2925bf5b</td></tr>
+<tr>
+<td title='clo.LoginPage.createApptSameTime()'><b>createApptSameTime</b><br>Test class: clo.LoginPage</td>
+<td></td>
+<td>9</td>
+<td>clo.LoginPage@2925bf5b</td></tr>
+<tr>
+<td title='clo.LoginPage.createNewAppointment()'><b>createNewAppointment</b><br>Test class: clo.LoginPage</td>
+<td></td>
+<td>15</td>
+<td>clo.LoginPage@2925bf5b</td></tr>
+<tr>
+<td title='clo.DatabaseSettings.dbAddCity()'><b>dbAddCity</b><br>Test class: clo.DatabaseSettings<br>Parameters: qa</td>
+<td></td>
+<td>18</td>
+<td>clo.DatabaseSettings@1ff4931d</td></tr>
+<tr>
+<td title='clo.DatabaseSettings.dbDeleteBankRTN()'><b>dbDeleteBankRTN</b><br>Test class: clo.DatabaseSettings</td>
+<td></td>
+<td>2</td>
+<td>clo.DatabaseSettings@1ff4931d</td></tr>
+<tr>
+<td title='clo.DatabaseSettings.dbDeleteCareProvider()'><b>dbDeleteCareProvider</b><br>Test class: clo.DatabaseSettings</td>
+<td></td>
+<td>2</td>
+<td>clo.DatabaseSettings@1ff4931d</td></tr>
+<tr>
+<td title='clo.DatabaseSettings.dbDeleteCity()'><b>dbDeleteCity</b><br>Test class: clo.DatabaseSettings</td>
+<td></td>
+<td>2</td>
+<td>clo.DatabaseSettings@1ff4931d</td></tr>
+<tr>
+<td title='clo.DatabaseSettings.dbDeleteDonee()'><b>dbDeleteDonee</b><br>Test class: clo.DatabaseSettings</td>
+<td></td>
+<td>2</td>
+<td>clo.DatabaseSettings@1ff4931d</td></tr>
+<tr>
+<td title='clo.DatabaseSettings.dbDeleteEducationalInstitute()'><b>dbDeleteEducationalInstitute</b><br>Test class: clo.DatabaseSettings</td>
+<td></td>
+<td>5</td>
+<td>clo.DatabaseSettings@1ff4931d</td></tr>
+<tr>
+<td title='clo.DatabaseSettings.dbDeleteEmployer()'><b>dbDeleteEmployer</b><br>Test class: clo.DatabaseSettings</td>
+<td></td>
+<td>3</td>
+<td>clo.DatabaseSettings@1ff4931d</td></tr>
+<tr>
+<td title='clo.DatabaseSettings.dbDeleteOccupations()'><b>dbDeleteOccupations</b><br>Test class: clo.DatabaseSettings</td>
+<td></td>
+<td>2</td>
+<td>clo.DatabaseSettings@1ff4931d</td></tr>
+<tr>
+<td title='clo.DatabaseSettings.dbDeleteReferrals()'><b>dbDeleteReferrals</b><br>Test class: clo.DatabaseSettings</td>
+<td></td>
+<td>4</td>
+<td>clo.DatabaseSettings@1ff4931d</td></tr>
+<tr>
+<td title='clo.DatabaseSettings.dbEditCity()'><b>dbEditCity</b><br>Test class: clo.DatabaseSettings</td>
+<td></td>
+<td>2</td>
+<td>clo.DatabaseSettings@1ff4931d</td></tr>
+<tr>
+<td title='clo.DatabaseSettings.dbaddBankRTN()'><b>dbaddBankRTN</b><br>Test class: clo.DatabaseSettings</td>
+<td></td>
+<td>2</td>
+<td>clo.DatabaseSettings@1ff4931d</td></tr>
+<tr>
+<td title='clo.DatabaseSettings.dbaddCareProvider()'><b>dbaddCareProvider</b><br>Test class: clo.DatabaseSettings</td>
+<td></td>
+<td>4</td>
+<td>clo.DatabaseSettings@1ff4931d</td></tr>
+<tr>
+<td title='clo.DatabaseSettings.dbaddDonee()'><b>dbaddDonee</b><br>Test class: clo.DatabaseSettings</td>
+<td></td>
+<td>3</td>
+<td>clo.DatabaseSettings@1ff4931d</td></tr>
+<tr>
+<td title='clo.DatabaseSettings.dbaddEducationalInstitute()'><b>dbaddEducationalInstitute</b><br>Test class: clo.DatabaseSettings</td>
+<td></td>
+<td>3</td>
+<td>clo.DatabaseSettings@1ff4931d</td></tr>
+<tr>
+<td title='clo.DatabaseSettings.dbaddEmployer()'><b>dbaddEmployer</b><br>Test class: clo.DatabaseSettings</td>
+<td></td>
+<td>7</td>
+<td>clo.DatabaseSettings@1ff4931d</td></tr>
+<tr>
+<td title='clo.DatabaseSettings.dbaddOccupations()'><b>dbaddOccupations</b><br>Test class: clo.DatabaseSettings</td>
+<td></td>
+<td>2</td>
+<td>clo.DatabaseSettings@1ff4931d</td></tr>
+<tr>
+<td title='clo.DatabaseSettings.dbaddReferrals()'><b>dbaddReferrals</b><br>Test class: clo.DatabaseSettings</td>
+<td></td>
+<td>2</td>
+<td>clo.DatabaseSettings@1ff4931d</td></tr>
+<tr>
+<td title='clo.DatabaseSettings.dbeditBankRTN()'><b>dbeditBankRTN</b><br>Test class: clo.DatabaseSettings</td>
+<td></td>
+<td>2</td>
+<td>clo.DatabaseSettings@1ff4931d</td></tr>
+<tr>
+<td title='clo.DatabaseSettings.dbeditCareProvider()'><b>dbeditCareProvider</b><br>Test class: clo.DatabaseSettings</td>
+<td></td>
+<td>3</td>
+<td>clo.DatabaseSettings@1ff4931d</td></tr>
+<tr>
+<td title='clo.DatabaseSettings.dbeditDonee()'><b>dbeditDonee</b><br>Test class: clo.DatabaseSettings</td>
+<td></td>
+<td>3</td>
+<td>clo.DatabaseSettings@1ff4931d</td></tr>
+<tr>
+<td title='clo.DatabaseSettings.dbeditEducationalInstitute()'><b>dbeditEducationalInstitute</b><br>Test class: clo.DatabaseSettings</td>
+<td></td>
+<td>2</td>
+<td>clo.DatabaseSettings@1ff4931d</td></tr>
+<tr>
+<td title='clo.DatabaseSettings.dbeditEmployer()'><b>dbeditEmployer</b><br>Test class: clo.DatabaseSettings</td>
+<td></td>
+<td>5</td>
+<td>clo.DatabaseSettings@1ff4931d</td></tr>
+<tr>
+<td title='clo.DatabaseSettings.dbeditOccupations()'><b>dbeditOccupations</b><br>Test class: clo.DatabaseSettings</td>
+<td></td>
+<td>2</td>
+<td>clo.DatabaseSettings@1ff4931d</td></tr>
+<tr>
+<td title='clo.DatabaseSettings.dbeditReferrals()'><b>dbeditReferrals</b><br>Test class: clo.DatabaseSettings</td>
+<td></td>
+<td>2</td>
+<td>clo.DatabaseSettings@1ff4931d</td></tr>
+<tr>
+<td title='clo.LoginPage.deleteAppointment()'><b>deleteAppointment</b><br>Test class: clo.LoginPage</td>
+<td></td>
+<td>1</td>
+<td>clo.LoginPage@2925bf5b</td></tr>
+<tr>
+<td title='clo.LoginPage.deleteMessage()'><b>deleteMessage</b><br>Test class: clo.LoginPage</td>
+<td></td>
+<td>2</td>
+<td>clo.LoginPage@2925bf5b</td></tr>
+<tr>
+<td title='clo.LoginPage.deleteSecondAppointment()'><b>deleteSecondAppointment</b><br>Test class: clo.LoginPage</td>
+<td></td>
+<td>0</td>
+<td>clo.LoginPage@2925bf5b</td></tr>
+<tr>
+<td title='clo.LoginPage.loginPositive()'><b>loginPositive</b><br>Test class: clo.LoginPage<br>Parameters: qa</td>
+<td></td>
+<td>10</td>
+<td>clo.LoginPage@2925bf5b</td></tr>
+<tr>
+<td title='clo.AccountSettings.loginSettings()'><b>loginSettings</b><br>Test class: clo.AccountSettings</td>
+<td></td>
+<td>2</td>
+<td>clo.AccountSettings@710f4dc7</td></tr>
+<tr>
+<td title='clo.LoginPage.newMessageReply()'><b>newMessageReply</b><br>Test class: clo.LoginPage</td>
+<td></td>
+<td>4</td>
+<td>clo.LoginPage@2925bf5b</td></tr>
+<tr>
+<td title='clo.LoginPage.newMessageSent()'><b>newMessageSent</b><br>Test class: clo.LoginPage</td>
+<td></td>
+<td>5</td>
+<td>clo.LoginPage@2925bf5b</td></tr>
+<tr>
+<td title='clo.AccountSettings.switchYear()'><b>switchYear</b><br>Test class: clo.AccountSettings<br>Parameters: qa</td>
+<td></td>
+<td>25</td>
+<td>clo.AccountSettings@710f4dc7</td></tr>
+<tr>
+<td title='clo.AccountSettings.toggleTrainingMode()'><b>toggleTrainingMode</b><br>Test class: clo.AccountSettings</td>
+<td></td>
+<td>3</td>
+<td>clo.AccountSettings@710f4dc7</td></tr>
+<tr>
+<td title='clo.AccountSettings.toggleTrainingModeOff()'><b>toggleTrainingModeOff</b><br>Test class: clo.AccountSettings</td>
+<td></td>
+<td>3</td>
+<td>clo.AccountSettings@710f4dc7</td></tr>
+<tr>
+<td title='clo.LoginPage.updateAppointment()'><b>updateAppointment</b><br>Test class: clo.LoginPage</td>
+<td></td>
+<td>6</td>
+<td>clo.LoginPage@2925bf5b</td></tr>
+<tr>
+<td title='clo.LoginPage.voidCheck()'><b>voidCheck</b><br>Test class: clo.LoginPage</td>
+<td></td>
+<td>2</td>
+<td>clo.LoginPage@2925bf5b</td></tr>
+</table><p>
+</body>
+</html>

@@ -18,7 +18,8 @@ public class FRM1040PO {
 		this.driver=driver;
 	}
 	
-	By frm1040btn = By.xpath("//div[@id='US0101']");
+	By frm1040btn = By.id("US0101");
+			//By.xpath("//div[@id='US0101']");
 	By preptype = By.id("SELF00");
 	
 	

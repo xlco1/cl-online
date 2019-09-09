@@ -25,7 +25,7 @@ public class LogincloPO {
 	By password = By.id("txtPasswordLogin");
 	By loginbtn = By.id("btnLoginButtonLogin");
 	By rememberPassword = By.id("chkRememberMeLogin");
-	By seccontbtn = By.id("btnContinueMFAMethod");
+	By seccontbtn = By.id("btnContinueMFAMethod"); 
 	By markaspublic = By.id("markAsPublic");
 	By verificationCode = By.xpath("//*[@id=\"mfaEnterCodeContainer\"]/div/div/div[2]/form/div[2]/div/input");
 			//*[@id='loginContainer']/div/div/div[2]/form/div[2]/div/input");

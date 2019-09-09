@@ -32,7 +32,8 @@ public class FRM8879PO {
 	By prepph = By.id("OTEL00");
 	By preptype = By.id("SELF00");
 	By taxpin = By.id("003500");
-	
+	By okbtninRefundType = By.xpath("//button/span[text()='OK']");
+			
 	public WebElement getRefndtype()
 	{
 		return driver.findElement(Refndtype);
@@ -77,7 +78,10 @@ public class FRM8879PO {
 	{
 		return driver.findElement(taxpin);
 	}
-	
+	public WebElement clickokbtninRefundType()
+	{
+		return driver.findElement(okbtninRefundType);
+	}
 	
 	
 	

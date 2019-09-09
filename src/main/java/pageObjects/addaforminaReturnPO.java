@@ -19,18 +19,14 @@ public class addaforminaReturnPO {
 	}
 	
 	By searchAForm = By.id("txtFilterDefaultAddFormModal");
-	By frmw2 = By.xpath("//td[contains(text(),'Wage and Tax Statement')]");
-			//By.id("US02row0");
-			//By.xpath("//td[contains(text(),'Wage and Tax Statement')]");
-	By frm8879 = By.xpath("//tbody/tr/th[contains(text(),'FRM 8879')]");
-			//By.id("US99row0");
-			//By.xpath("//tbody/tr/th[contains(text(),'FRM 8879')]");
-	By frmschE = By.id("US13row0");	//sche
-	By frm1099MISC = By.id("USG6row0"); //sche
-	By frmschC = By.xpath("//tr[@id='US09row0']");
-			//By.id("US09row0"); //sche
-	By continuebtnAddanewform = By.id("btnSubflagContinueAddFormModal");//----check id
-	By AddbtnAddanewform = By.id("btnAddFormAddFormModal");
+	By frmw2 = By.xpath("//td[contains(text(),'Wage and Tax Statement')]");	//By.id("US02row0");
+	By frm8879 = By.xpath("//tbody/tr/th[contains(text(),'FRM 8879')]");//By.id("US99row0");
+	By frmschE = By.id("US13");	
+	By frm1099MISC = By.id("USG6"); 
+	By frmschC =By.xpath("//tr[@id='US09']");//By.id("US09row0"); 
+	By continuebtnAddanewform = By.id("btnSubflagContinueAddFormModal");
+	By AddbtnAddanewform = By.xpath("//button/span[text()='Add']");
+			//By.id("btnAddFormAddFormModal");
 	By cancelbtnAddanewform = By.id("btnCancelAddFormModal");
 	
 	public WebElement clksearchAForm()
