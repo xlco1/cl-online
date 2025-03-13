@@ -1,31 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite2">
+<!-- ************QA TESTING************-->
 
-   <test name="testinqa">
-		<parameter name="env" value="qa" />
-		<classes>
-			<!-- <class name="clo.LoginPage" /> -->
-			<class name="clo.AccountSettings" />
-			<!-- <class name="clo.DatabaseSettings" /> -->
-		</classes>
-		</test> 
-		<!-- <test name="testinprod">
-		   <parameter name="env" value="prod"/> 
-		   <classes> 
-				<class name="clo.LoginPage" /> 
-				<class name="clo.AccountSettings" /> 
-				<class name="clo.DatabaseSettings" /> 
-			</classes> 
-			</test> -->
+<suite name="Suite1" parallel="tests" thread-count="1">
+  <listeners>
+  
+ <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+  <listener class-name="clo.Listener"/>  
 
-		<!-- <test name="testindev">
-		   <parameter name="env" value="dev"/> 
-		    <classes> 
-				<class name="clo.LoginPage" /> 
-				<class name="clo.AccountSettings" /> 
-				<class name="clo.DatabaseSettings" /> 
-			</classes> 
-			</test> -->
-	
+ </listeners>
+ 
+  <!-- <test name="QA-ADDARETURN">
+   <parameter name="env" value="qa"/>
+    <parameter name="year" value="2020"/>
+    <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="clo.AddaNewReturn"/>
+       </classes>
+  </test>   -->
+  
+
+ 
+  <test name="PROD-ADDARETURN">
+   <parameter name="env" value="prod"/>
+    <parameter name="year" value="2021"/>
+        <classes> 
+       <class name="clo.AddaNewReturn"/>   
+      </classes> 
+  </test>  
+  
+  <!--  <test name="testinprod">
+   <parameter name="env" value="prod"/>
+   <parameter name="year" value="2020"/>
+     <classes>
+       <class name="clo.AddaNewReturn"/>
+     <class name="clo.AddaNewPreparer"/>
+    </classes>
+  </test> -->
+ <!--  <test name="PROD-ADDARETURN">
+   <parameter name="env" value="prod"/>
+    <parameter name="year" value="2020"/>
+        <classes> 
+       <class name="clo.InterviewComplex"/>   
+      </classes> 
+  </test>   -->
+    
+  
+ <!-- <test  name="DEV-ADDARETURN">
+     <parameter name="env" value="dev"/>
+      <parameter name="year" value="2019"/>
+       <classes>
+      <class name="clo.AddaNewReturn"/>
+     </classes>
+  </test> -->
 </suite> 

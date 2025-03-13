@@ -1,50 +1,214 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Test started]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[Test started]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[STARTING ADDARETURN]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[opened a preparer]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[PREPARER OPENED]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[SSN ENTERED]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[Test failed]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=2024_05_10_02_31.png>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
   </reporter-output>
-  <suite name="Suite1" duration-ms="58936" started-at="2019-09-09T21:05:23Z" finished-at="2019-09-09T21:06:22Z">
+  <suite started-at="2024-05-10T02:30:44 PDT" name="Suite1" finished-at="2024-05-10T02:31:17 PDT" duration-ms="32817">
     <groups>
     </groups>
-    <test name="testinqa" duration-ms="58936" started-at="2019-09-09T21:05:23Z" finished-at="2019-09-09T21:06:22Z">
+    <test started-at="2024-05-10T02:30:44 PDT" name="DEV-ADDARETURN" finished-at="2024-05-10T02:31:17 PDT" duration-ms="32817">
       <class name="clo.AddaNewReturn">
-        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:clo.AddaNewReturn@4f83df68]" name="login" is-config="true" duration-ms="10870" started-at="2019-09-09T21:05:23Z" finished-at="2019-09-09T21:05:34Z">
+        <test-method is-config="true" signature="startReports()[pri:0, instance:clo.AddaNewReturn@78f5c518]" started-at="2024-05-10T02:30:44 PDT" name="startReports" finished-at="2024-05-10T02:30:44 PDT" duration-ms="79" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReports -->
+        <test-method is-config="true" signature="login(java.lang.String,java.lang.String)[pri:0, instance:clo.AddaNewReturn@78f5c518]" started-at="2024-05-10T02:30:44 PDT" name="login" finished-at="2024-05-10T02:30:56 PDT" duration-ms="11933" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[qa]]>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2023]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="addaReturn(java.lang.String)[pri:0, instance:clo.AddaNewReturn@4f83df68]" name="addaReturn" duration-ms="48043" started-at="2019-09-09T21:05:34Z" finished-at="2019-09-09T21:06:22Z">
+        <test-method signature="devaddaReturn(java.lang.String,java.lang.String)[pri:0, instance:clo.AddaNewReturn@78f5c518]" started-at="2024-05-10T02:30:56 PDT" name="devaddaReturn" finished-at="2024-05-10T02:31:16 PDT" duration-ms="19848" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[qa]]>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2023]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#\31 32200"}
+  (Session info: chrome=123.0.6312.86)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'CA2-WV-QA06', ip: '10.1.1.118', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ec38d551f76d2a5b37b2089e7eae37ae, findElement {using=id, value=132200}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.86, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\SSREEN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53961}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53961/devtoo..., se:cdpVersion: 123.0.6312.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ec38d551f76d2a5b37b2089e7eae37ae]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#\31 32200"}
+  (Session info: chrome=123.0.6312.86)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'CA2-WV-QA06', ip: '10.1.1.118', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ec38d551f76d2a5b37b2089e7eae37ae, findElement {using=id, value=132200}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.86, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\SSREEN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53961}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53961/devtoo..., se:cdpVersion: 123.0.6312.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ec38d551f76d2a5b37b2089e7eae37ae
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+at pageObjects.AddaReturnpgPO.getoccup(AddaReturnpgPO.java:200)
+at clo.AddaNewReturn.addCDS(AddaNewReturn.java:157)
+at clo.AddaNewReturn.devaddaReturn(AddaNewReturn.java:989)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Test started]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[STARTING ADDARETURN]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[opened a preparer]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[PREPARER OPENED]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[SSN ENTERED]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[Test failed]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=2024_05_10_02_31.png>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- devaddaReturn -->
+        <test-method is-config="true" signature="closeBrowser(java.lang.String)[pri:0, instance:clo.AddaNewReturn@78f5c518]" started-at="2024-05-10T02:31:16 PDT" name="closeBrowser" finished-at="2024-05-10T02:31:17 PDT" duration-ms="920" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[dev]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addaReturn -->
-        <test-method status="PASS" signature="teardown(java.lang.String)[pri:0, instance:clo.AddaNewReturn@4f83df68]" name="teardown" is-config="true" duration-ms="0" started-at="2019-09-09T21:06:22Z" finished-at="2019-09-09T21:06:22Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[qa]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="endReports()[pri:0, instance:clo.AddaNewReturn@4f83df68]" name="endReports" is-config="true" duration-ms="641" started-at="2019-09-09T21:06:22Z" finished-at="2019-09-09T21:06:23Z">
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="endReports()[pri:0, instance:clo.AddaNewReturn@78f5c518]" started-at="2024-05-10T02:31:17 PDT" name="endReports" finished-at="2024-05-10T02:31:17 PDT" duration-ms="169" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReports -->
       </class> <!-- clo.AddaNewReturn -->
-    </test> <!-- testinqa -->
+    </test> <!-- DEV-ADDARETURN -->
   </suite> <!-- Suite1 -->
 </testng-results>

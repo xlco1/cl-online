@@ -21,6 +21,7 @@ public class DatabaseSettingsPO {
 		By citiesaddbtn = By.id("btnUpsertZipCode");// add btn in add zip code modal
 		By citiescancelbtn = By.id("btnCancelAddUpsertZipCode");//cancel btn in the add zip code modal
 		By editbtn = By.xpath("//span[text() = 'Edit']");// First Edit button 
+		By firstTestCityAdded = By.xpath("//*[contains(text(),'TEST CITY EDITED']"); // first location in cities
 		By threedots = By.xpath("//img[@src = '/images/icons/menu_vertical.png']");//three dots on hover
 		By searchfield = By.id("txtUserDBFilterString");// search field
 		//By citiesdeletebtn = By.xpath("//li[text() = 'Delete']"); //Delete city button
@@ -51,6 +52,7 @@ public class DatabaseSettingsPO {
 		By providertype = By.id("txtNameControlUpsertCareProvider");//provider type txt box
 		By providernamecontrol = By.id("txtNameControlUpsertCareProviderNamecrtl");//name control txt box
 		By careprovidername = By.id("txtNameControlUpsertCareProviderName");//provider name
+		By careproviderphnum = By.id("txtNameControlUpsertCareProviderPhone");
 		By provideradd = By.id("txtEINIDUpsertCareProviderAddress");//care provider address
 		By providercity = By.id("txtNameControlUpsertCareProviderCity");//care provider city
 		By providerstate = By.id("selectDropDownUpsertCareProviderState");//care provider state
@@ -79,12 +81,17 @@ public class DatabaseSettingsPO {
 		By bankrtn = By.id("txtBankRtnUpsertBankRtnNumber");//bank rtn
 		By bankname = By.id("txtBankRtnUpsertBankRtnName");//bank name
 		By bankcancelbtn = By.id("btnCancelAddUpsertBankRtn");// bank cancel btn
-		By banksavebtn = By.id("btnCancelAddUpsertBankRtn");//bank add btn
+		By banksavebtn = By.id("btnUpsertBankRtn");//bank add btn
 		//-------------------------------------Occupations---------------------------------------------------------------------
 		By occupationslink = By.id("dbClickableRowOccupations");// occupations link
 		By occupationname = By.id("txtOccupationUpsertOccupationn");// Occupation name
 		By occupationcancelbtn = By.id("btnCancelAddUpsertOccupation");// occupation cancel btn
 		By occupationaddbtn = By.id("btnUpsertOccupation");// occupation add btn
+		//------------------------------------Site Identifiers-----------------------------------------
+		By siteidentifierlink = By.id("dbClickableRowSite Identifiers");
+		By sitecode = By.id("txtsiteCodeUpsertSiteIdentifier");
+		By sitedescription = By.id("txtsiteDescriptionUpsertSiteIdentifier");
+		By siteidentifieraddbtn = By.id("btnUpsertReferral");
 		//------------------------------------Educational Institutions------------------------------------------------------------------------
 		By educationalinstlink = By.id("dbClickableRowEducational Institutions");//educational inst link in the left menu
 		By edufederalein = By.id("txtEINIDUpsertEduInstEIN");// edu frderal EIN
@@ -141,6 +148,10 @@ public class DatabaseSettingsPO {
 		public WebElement clickeditbtn()
 		{
 			return driver.findElement(editbtn);
+		}
+		public WebElement getfirstTestCityAdded()
+		{
+			return driver.findElement(firstTestCityAdded);
 		}
 		public WebElement clickthreedots()
 		{
@@ -248,6 +259,10 @@ public class DatabaseSettingsPO {
 		public WebElement clickcareprovidername()
 		{
 			return driver.findElement(careprovidername);
+		}
+		public WebElement clickcareproviderphnum()
+		{
+			return driver.findElement(careproviderphnum);
 		}
 		public WebElement clickprovideradd()
 		{
@@ -373,7 +388,26 @@ public class DatabaseSettingsPO {
 		{
 			return driver.findElement(occupationaddbtn);
 		}
-		//---------------------------------Educational Institutions----------------------------------------------------------------------------
+		//--------------------------------Site Identifiers ---------------------------------------------------------------------
+		
+		public WebElement clicksiteidentifierlink()
+		{
+			return driver.findElement(siteidentifierlink);
+		}
+		public WebElement getsitecode()
+		{
+			return driver.findElement(sitecode);
+		}
+		public WebElement getsitedescription()
+		{
+			return driver.findElement(sitedescription);
+		}
+		public WebElement clicksiteidentifieraddbtn()
+		{
+			return driver.findElement(siteidentifieraddbtn);
+		}
+		
+		//---------------------------------Educational Institutions-------------------------------------------------------------
 		public WebElement clickeducationalinstitutionslink()
 		{
 			return driver.findElement(educationalinstlink);

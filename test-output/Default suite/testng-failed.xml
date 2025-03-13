@@ -3,14 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="clo.InterviewMode">
+      <class name="clo.RefundCalcReturn">
         <methods>
-          <include name="getStarted"/>
-          <include name="teardown"/>
+          <include name="complexRefundcalcReturn"/>
           <include name="login"/>
+          <include name="startReports"/>
           <include name="endReports"/>
+          <include name="teardown"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- clo.InterviewMode -->
+      </class> <!-- clo.RefundCalcReturn -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

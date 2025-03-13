@@ -32,7 +32,10 @@ public class FRM8879PO {
 	By prepph = By.id("OTEL00");
 	By preptype = By.id("SELF00");
 	By taxpin = By.id("003500");
-	By okbtninRefundType = By.xpath("//button/span[text()='OK']");
+	By okbtninRefundType = By.id("messageDialogId");
+			//By.xpath("//button/span[text()='OK']");
+	By disclosureReminderin333 = By.id("alert-dialog-title");
+	By okbtninDisclosureReminder = By.id("messageDialogId");
 			
 	public WebElement getRefndtype()
 	{
@@ -82,9 +85,14 @@ public class FRM8879PO {
 	{
 		return driver.findElement(okbtninRefundType);
 	}
-	
-	
-	
+	public WebElement disclosureReminderin333()
+	{
+		return driver.findElement(disclosureReminderin333);
+	}
+	public WebElement clickokbtninDisclosureReminder()
+	{
+		return driver.findElement(okbtninDisclosureReminder);
+	}
 	
 	
 	

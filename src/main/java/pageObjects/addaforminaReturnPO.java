@@ -19,15 +19,25 @@ public class addaforminaReturnPO {
 	}
 	
 	By searchAForm = By.id("txtFilterDefaultAddFormModal");
+	
+	By continuebtnAddanewform = By.id("btnSubflagContinueAddFormModal");
+	By AddbtnAddanewform = By.xpath("//button/span[text()='Add']");
+	//---Federal
 	By frmw2 = By.xpath("//td[contains(text(),'Wage and Tax Statement')]");	//By.id("US02row0");
+	By frmw2_TP = By.xpath("//tr[@id='US02']");
 	By frm8879 = By.xpath("//tbody/tr/th[contains(text(),'FRM 8879')]");//By.id("US99row0");
 	By frmschE = By.id("US13");	
 	By frm1099MISC = By.id("USG6"); 
 	By frmschC =By.xpath("//tr[@id='US09']");//By.id("US09row0"); 
-	By continuebtnAddanewform = By.id("btnSubflagContinueAddFormModal");
-	By AddbtnAddanewform = By.xpath("//button/span[text()='Add']");
 			//By.id("btnAddFormAddFormModal");
+	By frmSchF = By.id("US14");
+	By frmSchk11065 = By.id("USK2");
 	By cancelbtnAddanewform = By.id("btnCancelAddFormModal");
+	//----Depreciation
+	By cartruck = By.xpath("//*[contains(text(),'Vehicle Allocation')]");
+			//("//td[contains(text(),'Vehicle Allocation'[1]]");
+	//By frm8867 = By.id("USEJ");
+	By frm8867=By.xpath("//*[@id='formUSEJ01']");
 	
 	public WebElement clksearchAForm()
 	{
@@ -36,6 +46,11 @@ public class addaforminaReturnPO {
 	public WebElement clkfrmw2()
 	{
 		return driver.findElement(frmw2);
+	}
+	
+	public WebElement clkfrmw2_TP()
+	{
+		return driver.findElement(frmw2_TP);
 	}
 	public WebElement clkfrm8879()
 	{
@@ -66,6 +81,24 @@ public class addaforminaReturnPO {
 	{
 		return driver.findElement(frmschC);
 	}
+	public WebElement clkfrmSchF()
+	{
+		return driver.findElement(frmSchF);
+	}
+	public WebElement clkfrmSchk11065()
+	{
+		return driver.findElement(frmSchk11065);
+	}
+	public WebElement clkfrm8867()
+	{
+		return driver.findElement(frm8867);
+	}
+	//-----------Assets
+	public WebElement clkcartruck()
+	{
+		return driver.findElement(cartruck);
+	}
+	
 	
 	
 	
